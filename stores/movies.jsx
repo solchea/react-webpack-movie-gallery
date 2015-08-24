@@ -15,11 +15,6 @@ class MoviesStore {
     this.movies = movies
   }
 
-  onMovieDetailsLoad(resp) {
-    console.log("resp", resp)
-  	this.movieDetails[resp.title] = resp.data
-  }
-
 }
 
 module.exports = alt.createStore(MoviesStore, 'MoviesStore')

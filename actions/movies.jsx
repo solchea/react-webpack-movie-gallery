@@ -12,7 +12,7 @@ var unique = function(arr) {
     var j = i + 1
 
     for (; j < copyOfArr.length; ++j) {
-      if (copyOfArr[i].title === copyOfArr[j].title) {
+      if (copyOfArr[i].title.toLowerCase().trim() === copyOfArr[j].title.toLowerCase().trim()) {
         copyOfArr.splice(j--, 1)
       }
     }

@@ -10,20 +10,14 @@ var MoviePosters = React.createClass({
 
 	displayName: 'MoviePosters',
 
-	componentDidMount: function() {
-	},
-
 	render: function() {
-		//console.log(this.props)
-		var ctr = 0
 		var self = this
-		var processedMovies = {}
-		var movieList = this.props.moviesStore.movies.splice(0, 10)
+		var movieList = this.props.moviesStore.movies.slice(0, 20)
 		var movies = movieList.map(function(movie) {
-			return (<MovieDetails movie={movie} />)
+			return (<MovieDetails movie={movie}/>)
 		})
 		return (
-			<div>{movies}</div>
+			<div id="movie-posters-container">{movies}</div>
         )
 	}
 

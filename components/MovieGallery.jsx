@@ -9,6 +9,8 @@ var MoviePosters = require('./MoviePosters')
 var MoviesStore = require('../stores/movies')
 var MoviesActions = require('../actions/movies')
 
+var styles = require("./MovieGallery.less");
+
 var MovieGallery = React.createClass({
 
 	displayName: 'MovieGallery',
@@ -19,7 +21,7 @@ var MovieGallery = React.createClass({
 
 	render: function() {
 		return (
-			<div>
+			<div className="row">
 				<AltContainer stores={
           			{
             			moviesStore: MoviesStore
