@@ -8,8 +8,23 @@
     <!-- include react -->
     <script src="./node_modules/react/dist/react-with-addons.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.2/css/bootstrap3/bootstrap-switch.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/5.0.12/css/bootstrap-slider.css" rel="stylesheet">
 </head>
 <body>
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Movies Filmed in SF</a>
+        </div>
+      </div>
+    </nav>
     <div id="content" class="container">
         <!-- this is where the root react component will get rendered -->
     </div>
@@ -17,12 +32,15 @@
     <!-- include the webpack-dev-server script so our scripts get reloaded when we make a change -->
     <!-- we'll run the webpack dev server on port 8090, so make sure it is correct -->
     <script src="http://localhost:8090/webpack-dev-server.js"></script>
-
     <!-- include the bundle that contains all our scripts, produced by webpack -->
     <!-- the bundle is served by the webpack-dev-server, so serve it also from localhost:8090 -->
-    <script type="text/javascript" src="http://localhost:8090/assets/bundle.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.2/js/bootstrap-switch.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/5.0.12/bootstrap-slider.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script type="text/javascript" src="http://localhost:8090/assets/bundle.js"></script>
 </body>
 
 </html>
